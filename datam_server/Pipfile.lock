@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "6e304c6ed18bdc9f09761c43242971ac78ebdb5d9dc8be2c35834880b8cff0de"
+            "sha256": "c0de0e8fe2da32812069deeb7b4122cb6fb255f33fc1e252a69ab1bcab93c6ad"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -105,6 +105,13 @@
             "index": "pypi",
             "version": "==3.0.1"
         },
+        "pipfile": {
+            "hashes": [
+                "sha256:f7d9f15de8b660986557eb3cc5391aa1a16207ac41bc378d03f414762d36c984"
+            ],
+            "index": "pypi",
+            "version": "==0.0.2"
+        },
         "pyhive": {
             "hashes": [
                 "sha256:a5f2b2f8bcd85a8cd80ab64ff8fbfe1c09515d266650a56f789a8d89ad66d7f4"
@@ -183,12 +190,12 @@
             "index": "pypi",
             "version": "==0.3.0"
         },
-        "uwsgi": {
+        "toml": {
             "hashes": [
-                "sha256:d2318235c74665a60021a4fc7770e9c2756f9fc07de7b8c22805efe85b5ab277"
+                "sha256:229f81c57791a41d65e399fc06bf0848bab550a9dfd5ed66df18ce5f05e73d5c",
+                "sha256:235682dd292d5899d361a811df37e04a8828a5b1da3115886b73cf81ebc9100e"
             ],
-            "index": "pypi",
-            "version": "==2.0.17.1"
+            "version": "==0.10.0"
         },
         "vine": {
             "hashes": [

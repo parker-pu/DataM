@@ -1,0 +1,58 @@
+FROM anaconda3:v1
+# FROM continuumio/anaconda3
+# 设置目录
+RUN mkdir -p /data
+WORKDIR /data
+
+# # 安装一些包
+# RUN yum install -y wget
+
+# # 更新yum
+# RUN wget -O /etc/yum.repos.d/CentOS-Base.repo http://mirrors.aliyun.com/repo/Centos-7.repo && \
+# yum clean all && \
+# yum makecache
+# # RUN rm -rf 
+# # RUN apt-get update -y
+# RUN yum update -y
+RUN yum install -y python-devel libevent-devel gcc libffi-devel openssl-devel psutil gcc-c++
+# # RUN apt-get install -y gcc
+
+# # 下载python
+# RUN wget --quiet https://repo.continuum.io/archive/Anaconda3-2018.12-Linux-x86_64.sh  -O ~/anaconda.sh && \
+# /bin/bash ~/anaconda.sh -b -p /opt/conda && \
+# rm ~/anaconda.sh && \
+# echo "export PATH=/opt/conda/bin:$PATH" >> ~/.bashrc
+
+# 系统的一些配置
+# 设置时区
+RUN ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
+ENV LANG C.UTF-8 LC_ALL=C.UTF-8
+ENV TZ "Asia/Shanghai"
+
+# 拷贝pip源
+RUN echo "export PATH=/opt/conda/bin:$PATH" >> ~/.bashrc
+RUN echo "export PATH=/opt/conda/bin:$PATH" >> /etc/profile
+RUN source ~/.bashrc
+RUN source /etc/profile
+
+ENV CONFIG ~/.bashrc
+ENV CONFIG /etc/profile
+
+# RUN source ~/.bashrc && pip -V
+# RUN pip -V
+COPY pip.conf /root/.pip/pip.conf
+
+# 文件的一些配置
+# ADD . /data
+# RUN pip -V
+COPY . /data
+# RUN echo "export PATH=/opt/conda/bin:$PATH" >> ~/.bashrc && python3 -V
+# COPY datam_server /data/
+# WORKDIR /data/datam_server
+# COPY Pipfile /data/Pipfile
+# RUN pip install --upgrade pip
+RUN source ~/.bashrc && pip install -r requirements.txt
+CMD [ "bash", "start.sh"]
+
+# 对外暴露8080端口
+EXPOSE 8080

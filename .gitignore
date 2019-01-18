@@ -3,14 +3,18 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+# idea
+datam_server/.idea/
+!datam_server/static/dist
+.idea/
+
 # C extensions
 *.so
-
+!Pip*
 # Distribution / packaging
 .Python
 build/
 develop-eggs/
-dist/
 downloads/
 eggs/
 .eggs/

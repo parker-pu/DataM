@@ -21,6 +21,7 @@ thrift = "*"
 sasl = "*"
 thrift-sasl = "*"
 django-celery-beat = "*"
+pipfile = "*"
 
 [requires]
 python_version = "3.7"
