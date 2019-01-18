@@ -1,0 +1,26 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.tuna.tsinghua.edu.cn/simple"
+verify_ssl = true
+
+[dev-packages]
+
+[packages]
+django = "*"
+djangorestframework = "*"
+markdown = "*"
+django-filter = "*"
+sqlalchemy = "*"
+pymysql = "*"
+pyhive = "*"
+xlwt = "*"
+celery = "*"
+django-celery-results = "*"
+redis = "*"
+thrift = "*"
+sasl = "*"
+thrift-sasl = "*"
+django-celery-beat = "*"
+
+[requires]
+python_version = "3.7"
