@@ -5,7 +5,7 @@ import os
 from rest_framework import viewsets, status
 from rest_framework.response import Response
 from rest_framework.viewsets import ReadOnlyModelViewSet
-from user.models import DBSourceModel
+from my_token.models import DBSourceModel
 from task.tasks import now_exec_task, schedule_task
 from django_celery_results.models import TaskResult as CeleryTaskResult
 from custom.permission import CustomPermission

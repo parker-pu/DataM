@@ -23,6 +23,8 @@ class CustomException:
         :return:
         """
         back_error = None
+        if isinstance(exc, (str,)):
+            return exc
         error_value = exc.args[0]
         if isinstance(error_value, (int,)):
             back_error = self.exception_code_dict.get(exc.args[0])

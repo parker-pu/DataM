@@ -11,10 +11,10 @@ export default {
   },
   // 删除数据库配置列表
   sourceDel (data) {
-    return instance.delete('/api/v1/db_source/' + data.id)
+    return instance.delete('/api/v1/db_source/' + data.id + '/')
   },
   // 更新数据库配置列表
   sourceUpdate (data) {
-    return instance.put('/api/v1/db_source/' + data.id, data)
+    return instance.put('/api/v1/db_source/' + data.id + '/', data)
   }
 }

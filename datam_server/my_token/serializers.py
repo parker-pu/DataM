@@ -2,7 +2,7 @@
 from django.contrib.auth.models import User
 from rest_framework import serializers
 
-from user.models import DBSourceModel
+from my_token.models import DBSourceModel
 
 
 class UserSerializer(serializers.HyperlinkedModelSerializer):

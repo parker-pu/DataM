@@ -19,7 +19,7 @@ from django.urls import path, re_path, include
 from rest_framework import routers
 
 from datam_server import settings
-from user.views import (
+from my_token.views import (
     UserViewSet,
     AuthTokenView,
     DBSourceViewSet

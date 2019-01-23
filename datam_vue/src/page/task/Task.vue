@@ -8,7 +8,7 @@
         <el-table-column type="index" width="50"></el-table-column>
         <el-table-column property="name" label="任务名" width="200"></el-table-column>
         <el-table-column :formatter="booleFormat" property="task_status" label="任务状态" width="100"></el-table-column>
-        <el-table-column :formatter="dateFormat" property="update_time" label="最近更新" width="155">
+        <el-table-column :formatter="dateFormat" property="update_time" label="最近更新" width="160">
         </el-table-column>
         <el-table-column property="describe" label="任务描述"></el-table-column>
         <el-table-column

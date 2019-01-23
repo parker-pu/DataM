@@ -2,4 +2,4 @@ from django.apps import AppConfig
 
 
 class ManageConfig(AppConfig):
-    name = 'user'
+    name = 'my_token'
