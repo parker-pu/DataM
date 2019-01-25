@@ -164,11 +164,11 @@ EMAIL_HOST = 'smtp.exmail.qq.com'
 # smtp服务固定的端口是25
 EMAIL_PORT = 465
 # 发送邮件的邮箱
-EMAIL_HOST_USER = 'data.admin@shoufuyou.com'
+EMAIL_HOST_USER = 'data.admin@xx.com'
 # 在邮箱中设置的客户端授权密码
 EMAIL_HOST_PASSWORD = '1A2b3cAdmin'
 # 收件人看到的发件人 <此处要和发送邮件的邮箱相同>
-EMAIL_FROM = 'BI<data.admin@shoufuyou.com>'
+EMAIL_FROM = 'BI<data.admin@xx.com>'
 DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
 
 # 设置日志
