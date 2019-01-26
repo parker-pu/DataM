@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "c0de0e8fe2da32812069deeb7b4122cb6fb255f33fc1e252a69ab1bcab93c6ad"
+            "sha256": "00782b8094f51ca13efdf76ecce2752cad71a4efe45464000f458e24eef17376"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -63,11 +63,11 @@
         },
         "django-filter": {
             "hashes": [
-                "sha256:6f4e4bc1a11151178520567b50320e5c32f8edb552139d93ea3e30613b886f56",
-                "sha256:86c3925020c27d072cdae7b828aaa5d165c2032a629abbe3c3a1be1edae61c58"
+                "sha256:3dafb7d2810790498895c22a1f31b2375795910680ac9c1432821cbedb1e176d",
+                "sha256:a3014de317bef0cd43075a0f08dfa1d319a7ccc5733c3901fb860da70b0dda68"
             ],
             "index": "pypi",
-            "version": "==2.0.0"
+            "version": "==2.1.0"
         },
         "django-timezone-field": {
             "hashes": [
@@ -104,13 +104,6 @@
             ],
             "index": "pypi",
             "version": "==3.0.1"
-        },
-        "pipfile": {
-            "hashes": [
-                "sha256:f7d9f15de8b660986557eb3cc5391aa1a16207ac41bc378d03f414762d36c984"
-            ],
-            "index": "pypi",
-            "version": "==0.0.2"
         },
         "pyhive": {
             "hashes": [
@@ -155,13 +148,6 @@
             "index": "pypi",
             "version": "==3.0.1"
         },
-        "sasl": {
-            "hashes": [
-                "sha256:04f22e17bbebe0cd42471757a48c2c07126773c38741b1dad8d9fe724c16289d"
-            ],
-            "index": "pypi",
-            "version": "==0.2.1"
-        },
         "six": {
             "hashes": [
                 "sha256:3350809f0555b11f552448330d0b52d5f24c91a322ea4a15ef22629740f3761c",
@@ -171,10 +157,10 @@
         },
         "sqlalchemy": {
             "hashes": [
-                "sha256:6af3ca2f7f00844465ab4fa78337d487b39e53f516c51328aed4ed3a719d4264"
+                "sha256:52a42dbf02d0562d6e90e7af59f177f1cc027e72833cc29c3a821eefa009c71d"
             ],
             "index": "pypi",
-            "version": "==1.2.16"
+            "version": "==1.2.17"
         },
         "thrift": {
             "hashes": [
@@ -182,20 +168,6 @@
             ],
             "index": "pypi",
             "version": "==0.11.0"
-        },
-        "thrift-sasl": {
-            "hashes": [
-                "sha256:80e015290e7c9afc5b4864bfb964e841d4d98e1d70f74bc216cf269f243f3362"
-            ],
-            "index": "pypi",
-            "version": "==0.3.0"
-        },
-        "toml": {
-            "hashes": [
-                "sha256:229f81c57791a41d65e399fc06bf0848bab550a9dfd5ed66df18ce5f05e73d5c",
-                "sha256:235682dd292d5899d361a811df37e04a8828a5b1da3115886b73cf81ebc9100e"
-            ],
-            "version": "==0.10.0"
         },
         "vine": {
             "hashes": [

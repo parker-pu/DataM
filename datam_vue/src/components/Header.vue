@@ -214,7 +214,7 @@ export default {
 
   .container .topbar-wrap .topbar-title {
     float: left;
-    text-align: left;
+    ext-align: left;
     padding-left: 10px;
     border-left: 1px solid #000;
   }

@@ -3,8 +3,6 @@
   <div>
     <el-menu default-active="/"
              class="el-menu-vertical-demo"
-             @open="handleOpen"
-             @close="handleClose"
              :collapse="isCollapse" router>
       <el-menu-item index="">
         <i class="el-icon-arrow-right" v-if="isCollapse" @click="openLeft"></i>
@@ -31,12 +29,6 @@ export default {
     }
   },
   methods: {
-    handleOpen (key, keyPath) {
-      console.log(key, keyPath)
-    },
-    handleClose (key, keyPath) {
-      console.log(key, keyPath)
-    },
     closeLeft () {
       this.isCollapse = true
       this.$emit('listenToChildEvent', this.isCollapse)
