@@ -96,8 +96,8 @@ def exec_task(data, task_uuid):
     del db_source['_state']
 
     # 执行对应的SQL语句
-    back_data = DBSelect(**db_source)
-    back_data.exec(sql=task_obj.code_context)
+    db = DBSelect(**db_source)
+    back_data = db.exec(sql=task_obj.code_context)
 
     # 把数据打包成 execl , 以任务名称作为文件名
     file_uuid = primary_md5()
